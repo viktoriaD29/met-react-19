@@ -5,14 +5,14 @@ const Pagination = ({
   goNext,
   currentPage,
   totalItems,
-  usersPerPage,
+  itemsPerPage,
 }) => {
   // input: currentPage, usersPerPage, userCount
   // output: bool
 
   const isPrevPageAvailable = currentPage === 1;
 
-  const isNextPageAvailable = currentPage === totalItems / usersPerPage;
+  const isNextPageAvailable = currentPage === totalItems / itemsPerPage;
 
   return (
     <div className="pagination">
